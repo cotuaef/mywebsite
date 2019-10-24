@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Bootstrap Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+<!-- Favicon -->
+<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    
+    <!-- Navigation Bar -->
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="contact-us.html">Contact Us</a>
+</div>
+    
+<div class="container">
+  <form action="action_page.html">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="subject">Subject:</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+<div class="popup" onclick="myFunction()">
+  <span class="popuptext" id="myPopup"></span>
+</div>
+
+<input type="submit" value="Submit">
+<button onclick="myFunction()">Submit</button>
+    
+    <div>
+<label>Captcha</label>
+<span id="captcha-info" class="info"></span><br/>
+<input type="text" name="captcha" id="captcha" class="demoInputBox"><br>
+</div>
+<div>
+<img id="captcha_code" src="captcha.php" />
+<button name="submit" class="btnRefresh" onClick="refreshCaptcha();">Refresh Captcha</button>
+</div>
+
+<script>
+function myFunction() {
+  alert("Thank You For Contacting Us");
+}
+</script>
+  </form>
+</div>
+    
+  </body>
+</html>
